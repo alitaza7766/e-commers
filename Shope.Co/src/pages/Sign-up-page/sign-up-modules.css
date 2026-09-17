@@ -1,0 +1,76 @@
+.signup-page {
+	min-height: 100vh;
+	background: #f7f7f5;
+	color: #171717;
+}
+
+.signup-main {
+	width: min(100% - 32px, 520px);
+	margin: 72px auto;
+	padding: 40px;
+	background: #ffffff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+}
+
+.signup-main h1 {
+	margin: 0;
+	font-size: clamp(28px, 5vw, 40px);
+	line-height: 1.1;
+}
+
+.signup-intro {
+	margin: 12px 0 28px;
+	color: #666666;
+	line-height: 1.5;
+}
+
+.signup-form {
+	display: grid;
+	gap: 18px;
+}
+
+.signup-form label {
+	display: grid;
+	gap: 8px;
+	font-weight: 600;
+}
+
+.signup-form input {
+	width: 100%;
+	min-height: 44px;
+	padding: 10px 12px;
+	border: 1px solid #cfcfcf;
+	border-radius: 4px;
+	color: #171717;
+	font: inherit;
+}
+
+.signup-form input:focus {
+	border-color: #171717;
+	outline: 2px solid #d6d6d6;
+	outline-offset: 1px;
+}
+
+.signup-form button {
+	min-height: 44px;
+	margin-top: 6px;
+	border: 0;
+	border-radius: 4px;
+	background: #171717;
+	color: #ffffff;
+	cursor: pointer;
+	font: inherit;
+	font-weight: 600;
+}
+
+.signup-form button:hover {
+	background: #3d3d3d;
+}
+
+@media (max-width: 520px) {
+	.signup-main {
+		margin: 32px auto;
+		padding: 28px 20px;
+	}
+}

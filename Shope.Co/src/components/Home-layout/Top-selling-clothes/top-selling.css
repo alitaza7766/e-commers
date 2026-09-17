@@ -1,0 +1,119 @@
+.middlerow {
+  padding: 56px 5%;
+}
+
+.middlerow1 {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: clamp(28px, 4vw, 42px);
+}
+
+.middlerow2 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.top-selling-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top-selling-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  background: transparent;
+}
+
+.top-selling-image-button {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.top-selling-card h3 {
+  font-size: 16px;
+}
+
+.top-selling-card del {
+  color: #777;
+}
+
+.top-selling-rating {
+  width: auto;
+  max-width: 110px;
+  height: 18px;
+  object-fit: contain;
+  object-position: left;
+}
+
+.top-selling-buy-button {
+  align-self: flex-start;
+  border: 0;
+  border-radius: 999px;
+  padding: 11px 18px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+.middlerowbuttondiv {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.middlerowbutton {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #111;
+  border-radius: 999px;
+  padding: 11px 18px;
+  background: white;
+  color: #111;
+  cursor: pointer;
+}
+
+.middlerowbutton:hover {
+  background: #111;
+  color: white;
+  box-shadow: 0 8px 18px rgb(0 0 0 / 18%);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .middlerowbutton {
+    transition: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .middlerow2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .middlerow {
+    padding: 40px 20px;
+  }
+
+  .middlerow2 {
+    grid-template-columns: 1fr;
+  }
+
+  .top-selling-image {
+    max-height: 360px;
+  }
+
+  .middlerowbutton {
+    width: 100%;
+  }
+}

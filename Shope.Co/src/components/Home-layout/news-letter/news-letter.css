@@ -1,0 +1,86 @@
+.emaildiv {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 360px);
+  gap: 32px;
+  align-items: center;
+  margin: 56px 5%;
+  padding: 32px;
+  border-radius: 16px;
+  background: #111;
+  color: #fff;
+}
+
+.emaildiv1 {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.email-form {
+  display: grid;
+  gap: 10px;
+}
+
+.email-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  padding: 0 16px;
+  background: #fff;
+}
+
+.emailimg {
+  color: #666;
+  font-size: 18px;
+}
+
+.emaildiv2 {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  padding: 13px 0;
+  outline: 0;
+  font: inherit;
+}
+
+.emaildiv3 {
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 18px;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.emaildiv3:hover,
+.emaildiv3:focus-visible {
+  background: #22c55e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .emaildiv {
+    grid-template-columns: 1fr;
+    margin: 40px 20px;
+    padding: 24px;
+  }
+}
