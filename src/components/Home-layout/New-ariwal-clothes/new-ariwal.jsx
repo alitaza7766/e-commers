@@ -3,7 +3,7 @@ import Header from "../Header-layout/Header";
 import { addToCart } from "../../Cart/cart-functions";
 import { products } from "./new-arrival-data";
 import { topSellingProducts } from "../Top-selling-clothes/top-selling-data";
-import "../New-ariwal-clothes/new-arrival.css";
+import "./new-arrival.css";
 
 const allProducts = [...products, ...topSellingProducts];
 export { allProducts, products };

@@ -4,7 +4,7 @@ import two from "../pictures/zara-logo-1 1.png";
 import three from "../pictures/gucci-logo-1 1.png";
 import four from "../pictures/prada-logo-1 1.png";
 import five from "../pictures/Group (1).png";
-import "../Brand-logo/Brand-logo-modules.css";
+import "./Brand-logo-modules.css";
 
 function Brand() {
   return (

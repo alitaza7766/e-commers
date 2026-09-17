@@ -4,7 +4,7 @@ import frameStats from "../pictures/Frame 57.png";
 import mainBanner from "../pictures/Rectangle 2 (1).png";
 import vectorOne from "../pictures/Vector (1).png";
 import vectorTwo from "../pictures/Vector 2.png";
-import "../Hero-layout/Hero-modules.css";
+import "./Hero-modules.css";
 
 function Hero() {
   return (
