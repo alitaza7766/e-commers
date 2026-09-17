@@ -56,7 +56,8 @@
 }
 
 .top-selling-buy-button {
-  align-self: flex-start;
+  align-self: center;
+  width: 280px;
   border: 0;
   border-radius: 999px;
   padding: 11px 18px;
